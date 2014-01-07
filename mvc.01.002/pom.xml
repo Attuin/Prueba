@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>prueba</groupId>
-  <artifactId>mvc.01.002</artifactId>
+  <artifactId>mvc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
-  <name>mvc.01.002</name>
+  <name>mvc</name>
   <url>http://maven.apache.org</url>
 
   <properties>
