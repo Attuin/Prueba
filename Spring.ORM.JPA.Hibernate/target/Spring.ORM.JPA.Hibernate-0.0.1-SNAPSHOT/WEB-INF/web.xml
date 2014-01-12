@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xmlns="http://java.sun.com/xml/ns/javaee" 
+		 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+		 
+<!--  Controla el punto de entrada a la aplicación.?  -->
+<!--   <welcome-file-list> -->
+<!--     <welcome-file>hello.jsp</welcome-file> -->
+<!--     <welcome-file>index.jsp</welcome-file> -->
+<!--   </welcome-file-list> -->
+
+  	<display-name>Spring ORM, JPA y Hibernate, base de spring mvc.</display-name>
+  
+  	<!-- Spring MVC -->
+  	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+  
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/dispatcher-servlet.xml
+		</param-value>
+	</context-param>
+  	
+  	<!-- Spring ORM, JPA e Hibernate -->
+  	
+<!--   	<context-param>   -->
+<!--     <param-name>contextClass</param-name>   -->
+<!--     <param-value>   -->
+<!--       org.springframework.web.context.support.AnnotationConfigWebApplicationContext   -->
+<!--     </param-value>   -->
+<!--   </context-param>   -->
+    
+<!--   <context-param>   -->
+<!--     <param-name>contextConfigLocation</param-name>   -->
+<!--     <param-value>service</param-value>   -->
+<!--   </context-param>   -->
+      
+  
+</web-app>
+	
